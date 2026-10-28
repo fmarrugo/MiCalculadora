@@ -36,8 +36,15 @@ public class Calculadora {
             }
         } while(true);
         
-        System.out.println("Digite que operacion desea hacer:\n 1)+\n 2)-\n 3)*\n 4)/\n Opcion: ");
-        opc = Integer.parseInt(sc.nextLine());
+        do{
+            try{
+                System.out.println("Digite que operacion desea hacer:\n 1)+\n 2)-\n 3)*\n 4)/\n Opcion: ");
+                opc = Integer.parseInt(sc.nextLine());
+                break;
+            }catch(NumberFormatException e){
+                System.out.println("Debe digitar un numero.");
+            }
+        } while(true);
         
         try{
             switch (opc){

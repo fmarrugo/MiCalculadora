@@ -12,7 +12,7 @@ public class OperacionInvalida extends Exception {
     private final int operacion;
 
     public OperacionInvalida(int operacion) {
-        super("Operación "+ operacion +" es Inválida: Use +, -, * . /");
+        super("Operación "+ operacion +" es Inválida: Use +, -, * , /");
         this.operacion = operacion;
     }
 
